@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    /* overflow: hidden; */
+}
+
+body {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.left {
+    width: 25%;
+    /* padding: 30px; */
+}
+
+.right {
+    width: 75%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 20px;
+    position: relative;
+
+}
+
+
+
+/* .home {} */
+
+.home ul li {
+    width: 20px;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.signupbtn {
+
+    color: gray;
+    background-color: transparent;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    transition: 0.5s ease-in-out;
+    border: none;
+    font-size: large
+}
+
+.signupbtn:hover {
+    color: white;
+}
+
+
+
+.loginbtn {
+    margin-left: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+    /* outline: none; */
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: large;
+    border-radius: 50px;
+    color: black;
+    transition: 0.5s ease-in-out;
+
+}
+
+.loginbtn:hover {
+    font-weight: 700;
+
+
+}
+
+.heading {
+    width: 20px;
+    gap: 10px;
+    display: flex;
+    white-space: nowrap;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 11px;
+}
+
+.footer {
+    display: flex;
+    font-size: 10px;
+    gap: 13px;
+    /* white-space: nowrap; */
+    word-wrap: break-word;
+    /* For compatibility with older browsers */
+    overflow-wrap: break-word;
+    /* Standard property */
+    position: absolute;
+    bottom: 0;
+
+}
+
+.footer a {
+    color: grey;
+    text-decoration: none;
+    white-space: nowrap;
+
+}
+
+.library {
+    min-height: 75vh;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header>* {
+    padding: 20px;
+}
+
+.spotify-playlist {
+    /* 
+    padding: 16px;
+    font-size: x-large; */
+
+    height: 100%;
+    padding: 16px;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.spotify-playlist .title {
+    white-space: nowrap;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+
+
+    font-size: x-large;
+}
+
+.spotify-playlist .card {
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    width: 225px;
+    height: 272px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.165);
+    margin: 10px;
+    flex-wrap: wrap;
+    position: relative;
+
+
+}
+
+.card img {
+    width: 100%
+}
+
+.cardContainer {
+    height: 550px;
+    width: 1500px;
+    margin: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+
+.spotify-playlist .card h2 {
+    white-space: nowrap;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.spotify-playlist .card p {
+    white-space: nowrap;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 13.5px;
+}
+
+
+.card:hover {
+    .circle-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background-color: #1ed760;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 64px;
+        right: 18px;
+        opacity: 1;
+        transition: 1s ease-out;
+    }
+
+}
+
+.circle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #1ed760;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0px;
+    right: 18px;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.circle-container svg {
+    width: 24px;
+    /* Adjust size as needed */
+    height: 24px;
+    /* Adjust size as needed */
+    fill: black;
+    color: black;
+}
+
+
+
+/* Apply to the entire document or a specific container */
+body {
+    scrollbar-width: thin;
+    /* For Firefox */
+    scrollbar-color: #535353 #191414;
+    /* For Firefox */
+}
+
+/* For WebKit browsers (Chrome, Safari, etc.) */
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #191414;
+    /* Background of the scrollbar track */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #535353;
+    /* Scrollbar color */
+    border-radius: 10px;
+    /* Roundness of the scrollbar */
+    border: 3px solid #191414;
+    /* Padding around the scrollbar thumb */
+}
+
+/* Optional: Change hover behavior */
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #b3b3b3;
+    /* Scrollbar color on hover */
+}
+
+.playbar {
+    /* position: absolute;
+    bottom: 0; */
+    background-color: gray;
+    width: 70vw;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border-radius: 15px;
+    flex-direction: column;
+    height: 79px;
+}
+
+.listitem {
+    height: 600px;
+    overflow: scroll;
+}
+
+.listitem .info {
+    font-size: 14px;
+    width: 200px;
+}
+
+.listitem ol {
+    padding: 20px;
+
+}
+
+.music {
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.listitem ol li {
+    /* list-style: none; */
+    display: flex;
+    padding: 12px 0px;
+    gap: 10px;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    padding: 15px 10px 15px 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+
+}
+
+.listitem ol li div {
+    margin-right: 30px;
+
+}
+
+.seekbar {
+    height: 2px;
+    width: 100%;
+    border: 2px solid white;
+    position: relative;
+    cursor: pointer;
+}
+
+.circle {
+    background-color: white;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+    transition: left 1s;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons img {
+    cursor: pointer;
+    transition: ease-in-out 1s;
+}
+
+.songinfo{
+    font-size: 15px;
+    text-wrap: nowrap;
+}
+.songtime{
+    font-size: small;
+}
+
+.info-playbar{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
